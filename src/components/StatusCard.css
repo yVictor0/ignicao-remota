@@ -1,0 +1,80 @@
+.status__list {
+  margin: 0;
+  display: grid;
+}
+
+.status__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-top: 1px solid var(--border);
+}
+
+.status__row:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.status__row:last-child {
+  padding-bottom: 0;
+}
+
+.status__label {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.status__value {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  text-align: right;
+}
+
+.status__hint {
+  color: var(--muted);
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.status__muted {
+  margin: 0;
+  color: var(--muted);
+}
+
+.status__error {
+  margin: 0 0 10px;
+  color: var(--danger);
+  font-size: 0.875rem;
+}
+
+.dot {
+  flex: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot--on {
+  background: var(--accent);
+  box-shadow: 0 0 8px rgba(52, 211, 153, 0.7);
+}
+
+.dot--off {
+  background: var(--danger);
+}
+
+.dot--wait {
+  background: var(--warn);
+  animation: status-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes status-pulse {
+  50% {
+    opacity: 0.35;
+  }
+}

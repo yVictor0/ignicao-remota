@@ -1,0 +1,25 @@
+.dashboard__power {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 28px 16px;
+}
+
+.dashboard__feedback {
+  margin: 0;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.dashboard__feedback--success {
+  background: rgba(52, 211, 153, 0.12);
+  color: var(--accent);
+}
+
+.dashboard__feedback--error {
+  background: rgba(248, 113, 113, 0.12);
+  color: var(--danger);
+}

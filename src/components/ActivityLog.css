@@ -1,0 +1,36 @@
+.log__empty {
+  margin: 0;
+  color: var(--muted);
+}
+
+.log__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.log__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 4px 12px;
+  padding: 10px 0;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+
+.log__item:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.log__item:last-child {
+  padding-bottom: 0;
+}
+
+.log__delay,
+.log__time {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
